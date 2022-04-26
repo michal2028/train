@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+}
+
+.card{
+    position: relative;
+    margin: 20px 80px;
+    width: 400px;
+    height: 500px;
+    
+    
+    perspective: 800px;
+    .img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        transition: .8s;
+        
+    }
+    .text{
+        border-radius: 15px;
+        position: absolute;
+        top: 0;bottom: 0;right: 0;left: 0;
+        padding: 30px;
+        text-align: center;
+        transition: .8s;
+        background-color: #eec0c6;
+        background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+        opacity: 0;
+    }
+    .text-one{
+        transform: rotateX(-180deg);
+    }
+    .text-two{
+        transform: rotateY(-180deg);
+    }
+
+    .three{
+        background-image: url('./img/namibia-gabb705bae_1920.jpg');
+    }
+    .two{
+        background-image: url('./img/valley-g2c97a548e_1920.jpg');
+    }
+    .one{
+        transform: rotateX(0deg);
+        background-image: url('./img/forest-g744118264_1280.jpg');
+    }
+
+}
+
+.card:hover > .text{
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+.card:hover > .one{
+    transform: rotateX(180deg);
+}
+.card:hover > .two{
+    transform: rotateY(-180deg);
+}
+.card:hover > .three{
+    animation: up .8s;
+}
+.card:hover > .text-three{
+    animation: down .8s;
+}
+
+
+@keyframes up{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50%{
+        transform: translateY(-60%);
+        
+    }
+
+    80%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+   
+}
+
+@keyframes down{
+    0%{
+        transform: translateY(0);
+        z-index: -1;
+    }
+
+    50%{
+        transform: translateY(60%);
+        z-index: -1;
+    }
+
+    100%{
+        z-index: 1;
+    }
+}

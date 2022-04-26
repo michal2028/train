@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Comic Neue', cursive;
+    background: radial-gradient(circle, rgba(43, 44, 46, 1) 13%, rgba(25, 25, 25, 1) 65%);
+}
+
+.cards{
+    display: flex;
+    width: 1000px;
+    
+    justify-content:center;
+    text-align: center;
+}
+
+.one{
+    background-image: url('../../img/portrait-gf0a51ec44_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+    padding: 50px;
+    color:#fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+}
+.two{
+    background-image: url('../../img/man-g605cfd8df_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    padding: 50px;
+    color:#fff;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+}
+.card{
+    position: relative;
+ 
+    
+    button{
+        position: absolute;
+        top:20px;
+        right:20px;
+        padding: 10px;
+        background: none;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        text-shadow: 2px 2px 5px black;
+    }
+}

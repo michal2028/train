@@ -1,0 +1,388 @@
+@import 'colors';
+@import 'animate';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    // scroll-padding-top: 70px;
+}
+
+.blue-color{
+    color: $blue-color;
+}
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #444;
+}
+.shadow-bg{
+    background-color: rgba(0,0,0,.8);
+}
+
+nav {
+    transition: background-color .3s;
+    text-transform: uppercase;
+    z-index: 100;
+    a,
+    i {
+        color: $white;
+    }
+
+    a:hover {
+        color: $blue-color;
+    }
+    
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .active {
+        color: $blue-color;
+    }
+    .nav-band-span{
+        color: $blue-color;
+    }
+    
+    
+}
+
+header{
+    color: $white;
+    text-transform: uppercase;
+    .header-img{
+        position: relative;
+        height: 100vh;
+        background-image: url('../../img/img_small.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+
+        .fa-arrow-down{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 1.5rem;
+            color: $white;
+            animation: bounce-top 2s infinite;
+        }
+    }
+    .header-shadow{
+        z-index: -5;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.8);
+       
+    }
+    
+    .header-text{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+
+       
+    }
+}
+
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutus{
+    i{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .aboutus-card-title{
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .aboutus-card-text{
+        font-size: 14px;
+    }
+    .aboutus-hover{
+        // transition: animation 10s;
+    }
+    .aboutus-hover:hover{
+        color: $blue-color;
+    }
+}
+
+.portfolio-image{
+    position: relative;
+    background-image: url('../../img/img2_small.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 30px;
+    h2{
+        
+        color: #fff;
+    }
+    .portfolio-image-shadow{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.7);
+    }
+    i{
+        font-size: 30px;
+        color: #fff;
+    }
+    .portfolio-card-title{
+        font-size: 20px;
+        color: #fff;
+    }
+    .portfolio-card-text{
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+.prices{
+    h3{
+        font-size: 25px;
+        text-transform: uppercase;
+        color: $blue-color;
+    }
+    .prices-card-text{
+        font-size: 15px;
+    }
+    p{
+        font-weight: bold;
+    }
+    span{
+        font-weight: 500;
+    }
+
+    .pricers-card{
+        box-shadow: 2px 2px 15px black;
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid black;
+        transition: transform .3s;
+       
+        }
+       .pricers-card:hover{
+           transform: scale(1.1);
+       }
+        
+
+    .prices-card-line{
+        height: 1px;
+        width: 95%;
+        background-color: rgb(128, 128, 128);
+        margin-bottom: 15px;
+    }
+    i{
+        margin-left: 10px;
+    }
+    .price-info{
+        a{
+            text-decoration: none;
+        }
+        font-weight: 300;
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+
+.team{
+    z-index: 1;
+    h2{
+        margin-top: 15px;
+        color: #fff;
+        z-index: 1;
+    }
+    position: relative;
+    .bg-team{
+        z-index: -1;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.7);
+    }
+    height: 100vh;
+    background-image: url('../../img/chairs-ga3438c57a_1280.jpg');
+    background-position: center;
+    background-size: cover;
+   .card{
+       transition: transform .3s;
+       margin-right: 10px;
+       .card-body{
+           height: 200px;
+       }
+       .card-img-top{
+           height: 300px;
+           object-fit: cover;
+       }
+
+       .card-footer{
+          .text-muted{
+              display: flex;
+              justify-content: space-around;
+              i{
+                color: $blue-color;
+              }
+          }
+       }
+   }
+   .card:hover{
+       transform: scale(.95);
+   }
+   
+
+
+}
+
+.contact{
+    z-index: 0;
+    position: relative;
+    background-image:url('../../img/city-gd29c5eb98_1280.jpg');
+    background-size: cover;
+    background-position: bottom;
+       
+    }
+    .bg-contact{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.6);
+    }
+    .underline{
+        background-color: #fff;
+    }
+    h2{
+        color: #fff;
+    }
+    i{
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    .contact-box{
+        margin-top: 20px;
+        font-size: 12px;
+        padding: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        .cent{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+
+.achievements{
+    
+    .achievment-box{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        i{
+            color:#fff;
+            text-shadow: 0 0 10px black;
+            font-size: 60px;
+            
+        }
+        .procent{
+            font-size: 25px;
+        }
+        p{
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+.underline{
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $blue-color;
+}
+@media(max-width:992px){
+    .portfolio2{
+        display: none;
+     }
+     .portfolio3{
+
+        .card-img-top{
+            height: 200px;
+        }
+       
+
+
+     }
+}
+
+
+@media(min-width: 992px){
+    .portfolio3{
+        display: none;
+    }
+    .portfolio2{
+        .carousel-item{
+            position: relative;
+            height: 600px;
+        }
+        .carousel-caption{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            padding: 30px 0;
+            background-color: rgba(0,0,0,.7);
+        }
+        .carousel-indicators{
+            padding-bottom: 10px;
+        }
+     }
+}
+
+@media (min-width: 1200px){
+    header{
+    .header-img{
+        position: relative;
+        height: 100vh;
+        background-image: url('../../img/img_big.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    }
+}
+}
+

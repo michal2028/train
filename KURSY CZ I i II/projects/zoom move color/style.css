@@ -1,0 +1,100 @@
+
+* {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+ 
+body {
+    
+    font-size: 30px;
+    height: 100vh;
+    background-color: #333;
+
+}
+
+
+.btn{
+    width: 120px;
+    position: absolute;
+    top: 50px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    background-color:rgba(0, 0, 0, 100);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.b1{
+    left:30%;
+}
+.b2{
+    left:50%;
+}
+.b3{
+    left:70%;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:150px;
+   
+    border-radius: 25px;
+    transform: translateX(-50%);
+   
+
+
+}
+
+.s1{
+    background-color: royalblue;
+    left: 30%;
+    box-shadow: 0 0 15px 0 royalblue;
+    
+    border: 2px solid rgba(0, 0, 255, 10)
+ 
+    
+}
+.s2{
+    background-color:tomato;
+    left:50%;
+    box-shadow: 0 0 15px 0 tomato;
+    border: 2px solid rgba(255, 0, 0, 10);
+}
+.s3{
+    background-color: lime;
+    left:70%;
+    box-shadow: 0 0 15px 0 lime;
+    border: 2px solid rgba(0, 255, 0, 10);
+}
+
+.b1:hover ~ .square{
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.b2:hover ~ .square{
+    top:300px;
+    transition-duration: 1s;
+}
+
+.b3:hover ~ .square{
+ background-color: black;   
+ box-shadow: 0 0 15px 0 black;
+ border: 2px solid #fff;
+ transition: 1s;
+}

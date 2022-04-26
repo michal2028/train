@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    margin: 80px;
+    font-size: 30px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: royalblue;
+
+}
+
+div p{
+    font-size: 50px;
+    color:gold;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+
+* {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
+body {
+    
+    font-size: 30px;
+    height: 100vh;
+    background-color: #333;
+
+}
+
+.square{
+    width: 300px;
+    height: 300px;
+    background-color: gold
+    ;
+}
+@media (min-width: 500px){
+    .square{
+        background: royalblue;
+    }
+}
+@media (min-width:700px){
+    .square{
+        background-color: lime;
+    }
+}
+@media (min-width:550px) and (max-width:850px){
+    .square{
+        width: 450px;
+    }
+
+}
+@media (min-width:800px){
+    body{
+        background-color: #20bf55;
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+        
+    }
+}

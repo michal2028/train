@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .one{
+        background-image: url('../img/airsoft-g113a9d277_1920.jpg');
+    }
+    .two{
+        background-image: url('../img/portrait-gef7436106_1920.jpg');
+    }
+   
+    .card{
+        position: relative;
+        margin-right: 20px;
+        width: 300px;
+        height: 400px;
+        background-color: red;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px black;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        .card-text{
+            h2{
+                color: gold;
+                
+            }
+            h3{
+                color: rgb(218, 198, 74);
+            }
+            display: flex;
+           position: absolute;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 15px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px;
+            color: #fff;
+            background-color: rgba(0,0,0,.85);
+            clip-path: circle(0% at 85% 10%);
+            transition: clip-path 1s;
+        }
+        
+
+        button{
+            background: none;
+            font-size: 16px;
+            box-shadow: 2px 2px 15px #fff;
+            padding: 5px;
+            color: #fff;
+            background-color: rgba(0,0,0,.6);
+            border: 2px solid white;
+            border-radius: 15px;
+            position: absolute;
+            top:20px;
+            right: 20px;
+            cursor: pointer;
+            transition: 1s;
+            z-index: 2;
+        }
+        button:hover{
+            background-color: #fff;
+            color: black;
+            border: 2px solid black;
+            box-shadow: 2px 2px 15px black;
+        }
+
+        button:hover~ .card-text{
+            clip-path: circle(100% at 50% 50%);
+        }
+    }
+}

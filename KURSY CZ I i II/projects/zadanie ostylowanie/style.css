@@ -1,0 +1,20 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+body{
+    margin:20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 37px;
+}
+.img img{
+    width: 800px;
+    border-radius: 25px;
+    display:flex;
+    margin:auto;
+}
+.p1 p{
+    color:lime;
+}

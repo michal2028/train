@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+    font-size: 36px;
+    color: #fff;
+}
+ 
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+ .red:hover ~ .bg{
+    background-color: tomato;
+    transition: .3s;
+}
+ .blue:hover ~ .bg{
+    background-color: royalblue;
+    transition: .3s;
+}
+ .gold:hover ~ .bg{
+    background-color: gold;
+    transition: .3s;
+}
+ .green:hover ~ .bg{
+    background-color:greenyellow;
+    transition: 1s ;
+}
+
+
+.square {
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+ 
+.red {
+    background-color: tomato;
+   position: absolute;
+   left:60%;
+}
+ 
+.blue {
+    background-color: royalblue;
+    position: absolute;
+    left: 20%;
+}
+ 
+.green {
+    position: absolute;
+    left:40%;
+    background-color: greenyellow;
+}
+ 
+.gold {
+    position: absolute;
+    left:80%;
+    background-color: gold;
+}
